@@ -9,7 +9,7 @@ function handleImgLoad() {
 
 function paintImage(imgNumber) {
     const image = new Image();
-    image.src = `../practice/resources/image/bg${imgNumber + 1}.jpg`;
+    image.src = `/resources/images/image/bg${imgNumber + 1}.jpg`;
     image.classList.add("bgImage");
     body.appendChild(image);
 

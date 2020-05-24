@@ -8,5 +8,5 @@ $("#checkName").click(function(){
                 console.log(data);
             }
         })*/
-    location.href="/practice/joinHome.do";
+    location.href="joinHome.do";
 });

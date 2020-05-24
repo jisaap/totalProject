@@ -97,7 +97,7 @@
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${path }/resources/image/mainPage/portfolio_first.jpg" alt=""
+                                <img class="img-fluid" src="${path }/resources/images/mainPage/portfolio_first.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">FirstProject</div>
@@ -111,7 +111,7 @@
                                 ><div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="${path }/resources/image/mainPage/portfolio_second.jpg" alt=""
+                                <img class="img-fluid" src="${path} /resources/images/mainPage/portfolio_second.jpg" alt=""
                             /></a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">SecondProject</div>
@@ -288,7 +288,7 @@
          <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="${path }/resources/image/mainPage/portfolio_close.svg" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="${path }/resources/images/mainPage/portfolio_close.svg" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -296,7 +296,7 @@
                                     Project Details Go Here
                                     <h2 class="text-uppercase">Albarang</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${path }/resources/image/mainPage/portfolio_first.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="${path }/resources/images/mainPage/portfolio_first.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>Date: January 2020</li>
@@ -315,7 +315,7 @@
          <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="${path }/resources/image/mainPage/portfolio_close.svg" /></div>
+                    <div class="close-modal" data-dismiss="modal"><img src="${path }/resources/images/mainPage/portfolio_close.svg" /></div>
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
@@ -323,7 +323,7 @@
                                     Project Details Go Here
                                     <h2 class="text-uppercase">HaxaDirect</h2>
                                     <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="${path }/resources/image/mainPage/portfolio_second.jpg" alt="" />
+                                    <img class="img-fluid d-block mx-auto" src="${path }/resources/images/mainPage/portfolio_second.jpg" alt="" />
                                     <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                                     <ul class="list-inline">
                                         <li>Date: January 2020</li>

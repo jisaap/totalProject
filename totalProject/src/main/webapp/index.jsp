@@ -11,7 +11,6 @@
 	메인 백그라운ㄴ드 이미지는 기본적으로 있고 수정 가능하게
 	포트폴리오 / STUDY섹션은 각자 개별적으로 수정 가능하게  STUDY섹션은 여러가지 백터이미지중 선택할수 있도록 구현
 	 -->
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

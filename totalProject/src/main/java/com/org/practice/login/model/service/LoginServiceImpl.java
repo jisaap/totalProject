@@ -1,5 +1,7 @@
 package com.org.practice.login.model.service;
 
+import java.util.Map;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,9 +19,9 @@ public class LoginServiceImpl implements LoginService {
 	private LoginDao dao;
 	
 	@Override
-	public LoginMember memberSignIn(String id) {
+	public LoginMember memberSignIn(Map<String, String> map) {
 
-		return dao.memberSignIn(session, id);
+		return dao.memberSignIn(session, map);
 	}
 	
 	

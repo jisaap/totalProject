@@ -1,6 +1,7 @@
 package com.org.practice.login.controller;
 
 import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,13 +23,15 @@ public class LoginController {
 	@RequestMapping("/test.do")
 	public @ResponseBody HashMap<String, Object> test() {
 		HashMap<String, Object> result = new HashMap<String, Object>();
-		result.put("msg", "ì•ˆë…•");
+		result.put("msg", "¼º°ø");
 		return result;
 	}
 	
 	@RequestMapping("/signIn.do")
-	public @ResponseBody HashMap<String, LoginMember> memberSignin(@RequestParam String id) {
-		LoginMember info = service.memberSignIn(id);
+	@ResponseBody
+	public HashMap<String, LoginMember> memberSignin(@RequestParam Map map) {
+		System.out.println(map);
+		LoginMember info = service.memberSignIn(map);
 		HashMap<String, LoginMember> result = new HashMap<String, LoginMember>();
 		result.put("info", info);
 		System.out.println(info);

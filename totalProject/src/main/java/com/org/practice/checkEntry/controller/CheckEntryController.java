@@ -25,7 +25,6 @@ public class CheckEntryController {
 	
 	@RequestMapping("/joinHome.do")
 	public String joinHome() {
-		
 	return "home";
 	
 	}
