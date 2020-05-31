@@ -355,7 +355,7 @@
                                     <hr>
 									<div class="btnWrapper">
 	                                    <button class="btn btn-primary loginBtn-margin" id="signinBtn" type="button">Sign in</button>                                
-    	                                <button class="btn btn-primary loginBtn-margin" id="signupBtn" type="button">Sign up</button>
+	    	                            <button class="btn btn-primary loginBtn-margin" id="signupBtn" type="button" data-toggle="modal" href="#SignUpModal">Sign up</button>
     	                                <div><a href="findUserInfo.do">Find ID / PW</a></div>
 									</div>
                             	</div>
@@ -365,6 +365,9 @@
                 </div>
             </div>
         </div>
+
+
+
         
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -377,6 +380,7 @@
         <!-- Core theme JS-->
         <script src="${path }/resources/js/bootstrap_scripts.js"></script>
         <script src="${path }/resources/js/login.js"></script>
+        <script src="${path }/resources/js/signUp.js"></script>        
         <!-- 로그인 로직  -->
         
     </body>

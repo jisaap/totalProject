@@ -10,6 +10,22 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
+ 
+ /* 
+ 	사용자 css
+  ======================================================================== 
+  */
+  
+   input.nullCheck::-webkit-input-placeholder { 
+   	color: red;
+   	font-weight: bold; 
+   }  
+  
+  
+  /*  
+  ========================================================================
+  */
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
