@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="signUp">
+
+	<select id="checkId" parameterType="string" resultMap="String">
+		SELECT MEM_ID FROM TP_LOGINMEMBER_TB WHERE MEM_ID = #{id}
+	</select>
+
+
+	<resultMap type="signUpMem" id="sMemMap">
+		<result column="MEM_NUMBER_SEQ" property="memNumber" />
+		<result column="MEM_ID" property="memId" />
+		<result column="MEM_PW" property="memPw" />
+		<result column="MEM_NAME" property="memName" />
+		<result column="MEM_PHONE" property="memPhone" />
+		<result column="MEM_ADDR" property="memAddr" />
+	</resultMap>
+</mapper>

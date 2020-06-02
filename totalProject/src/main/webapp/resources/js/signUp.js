@@ -6,3 +6,18 @@
 $(document).on('click','#signupBtn', function() {
 	location.href="signUp.do";
 });
+
+
+$(document).on('click','#checkId',function(){
+	$.ajax({
+		type : "post",
+		url : "checkId.do",
+		data :  {"id" : $("#ID").val()},
+		success : function(data) {
+			alert(data);
+		},
+		error : function(request, status, error) {
+			alert("code = " + request.status + "   message = " + request.responseText + " error = " + error); // 실패 시 처리
+		}
+	});
+});

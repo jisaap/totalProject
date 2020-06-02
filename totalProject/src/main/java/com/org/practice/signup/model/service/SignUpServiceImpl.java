@@ -16,6 +16,9 @@ public class SignUpServiceImpl implements SignUpService {
 	private SignUpDao dao;
 	
 	
-	
+	@Override
+	public String checkId(String id) {
+		return dao.checkId(session, id);
+	}
 	
 }

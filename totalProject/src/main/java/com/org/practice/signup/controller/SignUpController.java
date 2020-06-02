@@ -1,5 +1,7 @@
 package com.org.practice.signup.controller;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,5 +21,23 @@ public class SignUpController {
 	public String memberSignUp() {
 		return "signUp";
 		}
+	
+	
+	
+	@RequestMapping("/signUpMem")
+	public String signUp() {
+		
+		
+		
+		
+		return "home";
+	}
+	
+	@RequestMapping("/checkId")
+	@ResponseBody
+	public String checkId(String id) {
+		
+		return service.checkId(id);
+	}
 	
 }

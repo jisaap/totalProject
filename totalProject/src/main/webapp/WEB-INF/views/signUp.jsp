@@ -42,7 +42,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
-                                <p class="help-block text-danger"></p>
+                                <p class="help-block text-danger"><button id="checkId"></button></p>
                             </div>
                             <div class="form-group">
                                 <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
