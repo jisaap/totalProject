@@ -18,7 +18,7 @@ public class SignUpController {
 
 
 	@RequestMapping("/signUp.do")
-	public String memberSignUp() {
+	public String memberSignUp(String id) {
 		return "signUp";
 		}
 	
@@ -33,11 +33,19 @@ public class SignUpController {
 		return "home";
 	}
 	
-	@RequestMapping("/checkId")
+	@RequestMapping("/checkId.do")
 	@ResponseBody
 	public String checkId(String id) {
+		String msg = "";
+		if(id != "") {
+			msg = service.checkId(id);
+			if(msg != null)msg = "중복된 아이디 입니다.";
+			else msg = "사용가능한 아이디 입니다.";
+		}else {
+			msg = "아이디를 입력해 주세요.";
+		}
 		
-		return service.checkId(id);
+		return msg;
 	}
 	
 }

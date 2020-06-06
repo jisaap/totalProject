@@ -14,7 +14,6 @@ public class SignUpMember {
 	private String memId;
 	private String memPw;
 	private String memName;
-	private String memPhone;
-	private String memAddr;
+	private String memInfo;
 	
 }

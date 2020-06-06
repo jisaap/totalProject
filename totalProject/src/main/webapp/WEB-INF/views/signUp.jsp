@@ -40,9 +40,10 @@
                 	 <form id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
-                            <div class="form-group">
+                            <div class="form-group" id="inpiutId">
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
-                                <p class="help-block text-danger"><button id="checkId"></button></p>
+                                <p class="help-block text-danger"></p>
+                                <!-- <button class="btn btn-primary btn-xl text-uppercase" id="checkId" style="">중복체크</button> -->
                             </div>
                             <div class="form-group">
                                 <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />

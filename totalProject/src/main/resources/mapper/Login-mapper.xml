@@ -13,6 +13,6 @@
 		<result column="MEM_PW" property="memPw" />
 		<result column="MEM_NAME" property="memName" />
 		<result column="MEM_PHONE" property="memPhone" />
-		<result column="MEM_ADDR" property="memAddr" />
+		<result column="MEM_INFO" property="memInfo" />
 	</resultMap>
 </mapper>

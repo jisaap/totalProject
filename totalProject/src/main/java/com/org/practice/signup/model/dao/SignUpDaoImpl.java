@@ -8,7 +8,12 @@ public class SignUpDaoImpl implements SignUpDao{
 
 	@Override
 	public String checkId(SqlSessionTemplate session, String id) {
-		return session.selectOne("checkId", id);
+		System.out.println("=============================");
+		System.out.println(id);
+		String s = session.selectOne("signUp.checkId", id);
+		System.out.println(s);
+		return s;
+//		return session.selectOne("signUp.checkId", id);
 	}
 
 		

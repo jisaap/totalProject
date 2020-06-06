@@ -3,6 +3,7 @@
 <configuration>
 	<typeAliases>
 				<typeAlias type="com.org.practice.login.model.vo.LoginMember" alias="loginMem"/>
+				<typeAlias type="com.org.practice.signup.model.vo.SignUpMember" alias="signUpMem"/>
 		
 		
  	</typeAliases>

@@ -2,10 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="signUp">
 
-	<select id="checkId" parameterType="string" resultMap="String">
+	<select id="checkId" parameterType="string" resultType="string">
 		SELECT MEM_ID FROM TP_LOGINMEMBER_TB WHERE MEM_ID = #{id}
 	</select>
 
+	<insert id="insertMem" parameterType="map">
+		INSERT INTO TP_LOGINMEMBER_TB VALUES(MEM_NUMBER_SEQ.NEXTVAL,#{id},#{pw},#{name},'',#{info})
+	</insert>
 
 	<resultMap type="signUpMem" id="sMemMap">
 		<result column="MEM_NUMBER_SEQ" property="memNumber" />
@@ -13,6 +16,6 @@
 		<result column="MEM_PW" property="memPw" />
 		<result column="MEM_NAME" property="memName" />
 		<result column="MEM_PHONE" property="memPhone" />
-		<result column="MEM_ADDR" property="memAddr" />
+		<result column="MEM_INFO" property="memInfo" />
 	</resultMap>
 </mapper>
