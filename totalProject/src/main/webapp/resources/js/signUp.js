@@ -20,9 +20,12 @@ $(document).on('click','#signupBtn', function() {
 				$("#name").attr("placeholder", data);
 				$("#name").addClass("nullCheck");
 				$("#name").focus();
+				$("#idInfo").text(data);
+				$("#idInfo").css("color","red");
 			}else {
 				oldVal = $("#name").val();
 				$("#name").attr("id","checkedId");
+				$("#idInfo").text("");
 			}
 		},
 		error : function(request, status, error) {
@@ -40,4 +43,8 @@ $(document).on('click','#signupBtn', function() {
 	$("#checkedId").attr("id","name");
 });
 	
+//	버튼 을 기존에 이메일 체킄로 만들고 이메일 체크가 완료되면 signUp버튼으로 확성화 되는 형식
+	$(document).on("click","#signUpBtn", function(){
+		
+	});
 	

@@ -43,6 +43,7 @@
                             <div class="form-group" id="inpiutId">
                                 <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
                                 <p class="help-block text-danger"></p>
+                                <p id="idInfo"></p>
                                 <!-- <button class="btn btn-primary btn-xl text-uppercase" id="checkId" style="">중복체크</button> -->
                             </div>
                             <div class="form-group">
@@ -63,7 +64,7 @@
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Sign Up</button>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="signUpBtn">Sign Up</button>
                     </div>
                 </form>
                 </div>
