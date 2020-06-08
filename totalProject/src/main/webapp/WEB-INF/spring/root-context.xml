@@ -61,6 +61,24 @@
 			<tx:method name="delete*"/>
 		</tx:attributes>
 	</tx:advice>
+	
+	<!-- 메일 전송 -->
+	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="smtp.gmail.com"></property>
+		<property name="port" value="25"></property>
+		<property name="username" value="lgwan840@gmail.com"></property>
+		<property name="password" value=""></property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.transport.protocol">smtp</prop>			
+				<prop key="mail.smtp.auth">true</prop>							
+				<prop key="mail.smtp.starttls.enable">true</prop>			
+				<prop key="mail,debug">true</prop>							
+			</props>
+		</property>
+	</bean>
+	
+	
 	<!-- aop기능 활용 -->
 	<aop:config>
 		<aop:pointcut expression="execution(* com.org.practice..*ServiceImpl*.*(..))" id="txpoint"/>
