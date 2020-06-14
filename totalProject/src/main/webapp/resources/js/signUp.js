@@ -47,24 +47,36 @@ $(document).on('click','#signupBtn', function() {
 	
 	
 //	버튼 을 기존에 이메일 체킄로 만들고 이메일 체크가 완료되면 signUp버튼으로 확성화 되는 형식
-	$(document).on("click","#signUpBtn", function(){
-		$.ajax({
-			type : "post",
-			url : "checkEmail.do",
-			data : {
-				"email" : $("#email").val()
-			},
-			success : function(data) {
-				console.log(data);
-				
-				
-				
-				
-				$("signUpBtn").val("SIGN UP");
-			},
-			error : function(request, status, error) {
-				alert("code = " + request.status + "   message = " + request.responseText + " error = " + error); // 실패 시 처리
-			}
+	$(document).on("click","#entryBtn", function(){
+		// 유효성 검사 로직 추가하기 
+
+		// 메일 검증 정규식
+		let mailCk = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@([0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+		if($("#email").val().match(mailCk)){
+			alert("asasasasas");
+		}
+		
+
+
+
+			$.ajax({
+				type : "post",
+				url : "checkEmail.do",
+				data : {
+					"email" : $("#email").val()
+				},
+				success : function(data) {
+					console.log(data);
+					
+					
+					
+					
+					$("entryBtn").val("SIGN UP");
+				},
+				error : function(request, status, error) {
+					alert("code = " + request.status + "   message = " + request.responseText + " error = " + error); // 실패 시 처리
+				}
+			});
 		});
-	});
 	

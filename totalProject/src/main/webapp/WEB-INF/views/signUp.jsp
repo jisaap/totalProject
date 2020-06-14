@@ -64,7 +64,7 @@
                     </div>
                     <div class="text-center">
                         <div id="success"></div>
-                        <button class="btn btn-primary btn-xl text-uppercase" id="signUpBtn">Sign Up</button>
+                        <button class="btn btn-primary btn-xl text-uppercase" id="entryBtn" type="Button">Mail Check</button>
                     </div>
                 </form>
                 </div>

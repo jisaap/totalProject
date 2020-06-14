@@ -20,11 +20,11 @@ public class MailController {
 	@Autowired
 	MailService mailService;
 	
-
-	
 	@RequestMapping("checkEmail")
 	@ResponseBody
 	public Map<String, Boolean> checkEmail(String email, HttpServletRequest request) {
+		System.out.println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		System.out.println("email : " + email);
 		Map<String, Boolean> map = new HashMap<String, Boolean>();
 		HttpSession session = request.getSession(true);
 		String subject ="인증 메일 발송 문구";
@@ -33,6 +33,9 @@ public class MailController {
 		//메일 인증 어떤 식으로 할지 정하기
 		return map;
 	}
+	
+	
+	
 	
 	
 	public void forSendEmail(String userEmail, String title, String msg,  HttpServletRequest request) {
