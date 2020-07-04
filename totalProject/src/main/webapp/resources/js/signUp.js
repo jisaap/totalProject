@@ -4,6 +4,11 @@
 
 let oldVal
 
+$(document).ready(function () {
+	$('html, body').animate({scrollTop : $("#signUp").prop('scrollHeight')});
+});
+
+
 $(document).on('click','#signupBtn', function() {
 	location.href="signUp.do";
 });
@@ -54,11 +59,6 @@ $(document).on('click','#signupBtn', function() {
 		let mailCk = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@([0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 
 		if($("#email").val().match(mailCk)){
-			alert("asasasasas");
-		}
-		
-
-
 
 			$.ajax({
 				type : "post",
@@ -67,16 +67,20 @@ $(document).on('click','#signupBtn', function() {
 					"email" : $("#email").val()
 				},
 				success : function(data) {
-					console.log(data);
-					
-					
-					
-					
-					$("entryBtn").val("SIGN UP");
+					let ckMail = Object.keys(data)[0];
+
+					//					$("entryBtn").innerHTML("SIGN UP");
+					let mailVal = prompt("이메일 인증 값을 입력 해주세요.");
+					if(mailVal == ckMail) {
+						$("#entryBtn").html('SIGN UP');
+					}else {
+						alert("정확한 인증 코드를 입력해주세요.");
+					}
 				},
 				error : function(request, status, error) {
 					alert("code = " + request.status + "   message = " + request.responseText + " error = " + error); // 실패 시 처리
 				}
 			});
+		}
 		});
 	
